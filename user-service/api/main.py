@@ -26,4 +26,4 @@ app.include_router(user.router)
 
 if __name__ == '__main__':
     sess.create_tables()
-    uvicorn.run('main:app', port=8010, reload=True)
+    uvicorn.run('main:app', port=8010, host="0.0.0.0", reload=True)
